@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); // парсинг JSON-запитів
